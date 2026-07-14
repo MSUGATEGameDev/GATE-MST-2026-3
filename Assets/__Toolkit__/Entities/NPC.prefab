@@ -1258,7 +1258,7 @@ MonoBehaviour:
   dialogScreen: {fileID: 2749223255329129058}
   npcNameBox: {fileID: 4870891639343931858}
   dialogBox: {fileID: 2990088647756414788}
-  dialogBackButton: {fileID: 0}
+  dialogBackButton: {fileID: 576792476187771890}
 --- !u!54 &370628255609688529
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -34,13 +34,17 @@ public class Chest : GameTrigger
     }
     IEnumerator GetThingSoon()
     {
-        yield return new WaitForSeconds(.5f);
-        instantiatedCollectible = Instantiate(collectibleToPresent, thingHolder);
-        instantiatedCollectible.transform.localPosition = Vector3.zero;
-        instantiatedCollectible.GetComponent<BoxCollider>().enabled = false;
-        yield return new WaitForSeconds(4);
-        instantiatedCollectible.OnCollection();
-        ActivateItems();
+        if(collectibleToPresent != null)
+        {
+            yield return new WaitForSeconds(.5f);
+            instantiatedCollectible = Instantiate(collectibleToPresent, thingHolder);
+            instantiatedCollectible.transform.localPosition = Vector3.zero;
+            instantiatedCollectible.GetComponent<BoxCollider>().enabled = false;
+            yield return new WaitForSeconds(4);
+            instantiatedCollectible.OnCollection();
+            ActivateItems();
+        }
+        
     }
     public override void Deactivate()
     {

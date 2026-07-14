@@ -3070,6 +3070,7 @@ MonoBehaviour:
   indoors: 1
   actions:
   - {fileID: 0}
+  clearObjectives: 1
 --- !u!4 &888802621
 Transform:
   m_ObjectHideFlags: 0
